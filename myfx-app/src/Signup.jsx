@@ -19,12 +19,17 @@ function Signup() {
   return (
     <div className="container">
       <h1>SIGNUP</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="username" placeholder="Username" onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-        <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
-        <button type="submit">Signup</button>
-      </form>
+      <form className="form-group" onSubmit={handleSubmit}>
+        <div className="form-group">
+        <label for = "username">Username</label>
+        <input type="text" name="username" className="form-control"placeholder="Username" onChange={handleChange} required />
+        <label>Email</label>
+        <input type="email" name="email" className="form-control" placeholder="Email" onChange={handleChange} required />
+        <label>Password</label>
+        <input type="password" name="password" className="form-control" placeholder="Password" onChange={handleChange} required />
+        <button type="submit" className="btn">Signup</button>
+        <p>Already have an account? <a href="./Login">Login</a></p>
+      </div></form>
     </div>
   );
 }

@@ -41,65 +41,82 @@
   color: #888;
 }
 .container {
-  border: 1px solid #61dafb; /* Fixed border color */
+  border: 1px solid #61dafb;
   border-radius: 10px;
   padding: 20px;
-  margin: 20px;
-  box-shadow: 0 0 10px #61dafb;
-  max-width: 400px; /* Adjust width to maintain form alignment */
-  margin: auto;
+  margin: 40px auto; /* Centers the form */
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.5);
+  max-width: 400px; /* Keeps the form compact */
+  background-color: #222; /* Dark background for better contrast */
 }
 
 .container h1 {
   color: #61dafb;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 24px;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .container .form-group {
-   
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 15px;
 }
 
 .container label {
-  color: white;
-  font-size: 15px;
-  padding-bottom: 5px;
-  text-align: end;
+  color: #61dafb;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.container input,
-.container textarea {
-  width: 100%; /* Ensures uniform width */
+.container input {
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #61dafb;
-  box-sizing: border-box; /* Ensures padding doesn’t affect width */
+  background-color: #333;
+  color: white;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.container textarea {
-  resize: vertical; /* Allows resizing only vertically */
-  height: 100px; /* Adjust default height */
+.container input:focus {
+  border-color: #fff;
+  background-color: #444;
 }
 
 .container button {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #61dafb;
+  border: none;
   background-color: #61dafb;
-  color: white;
+  color: #222;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .container button:hover {
-  background-color: whitesmoke;
+  background-color: white;
   color: #61dafb;
 }
 
 .container p {
-  color: white;
-  font-size: 15px;
+  color: #ccc;
+  font-size: 14px;
   text-align: center;
+  margin-top: 10px;
+}
+
+.container p a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container p a:hover {
+  text-decoration: underline;
 }

@@ -115,15 +115,13 @@ button:focus-visible {
 
 /* Container Styling */
 .container {
-  width: 90%;
-  max-width: 800px;
-  background-color: #1a1a1a;
-  border: 2px solid #61dafb;
+  border: 1px solid #61dafb;
   border-radius: 10px;
   padding: 20px;
-  margin: 100px auto 20px;
-  box-shadow: 0 0 15px rgba(97, 218, 251, 0.5);
-  text-align: center;
+  margin: 40px auto; /* Centers the form */
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.5);
+  max-width: 400px; /* Keeps the form compact */
+  background-color: #222; /* Dark background for better contrast */
 }
 
 /* Light Mode */
