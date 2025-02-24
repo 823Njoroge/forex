@@ -25,9 +25,7 @@ function Home() {
         <h3 className="title2">Your financial freedom starts here!</h3>
       </header>
 
-      <p style={{ textAlign: "center", margin: "20px 0", color: "#333" }}>
-        Scroll to view various services of this site
-      </p>
+     
 
       <div className="card-container">
         <div className="card">

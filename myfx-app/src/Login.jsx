@@ -18,12 +18,12 @@ function Login() {
   };
 
   return (
-    <div className="container">
+    <div className="container-login">
       <h1>LOGIN</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-        <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
-        <button type="submit">Login</button>
+      <form className="form-login" onSubmit={handleSubmit}>
+        <input className="input-login" type="email" name="email" placeholder="Email" onChange={handleChange} required />
+        <input  className="input-login" type="password" name="password" placeholder="Password" onChange={handleChange} required />
+        <button  className="input-login" type="submit">Login</button>
       </form>
     </div>
   );
