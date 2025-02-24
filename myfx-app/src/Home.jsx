@@ -12,11 +12,8 @@ function Home() {
     const navigate = useNavigate();
     useEffect(() => {
         
-        const token = localStorage.getItem("token");
-        if (!token) {
-          alert("Please login first!");
-          navigate("/login");
-        }
+       const token = localStorage.getItem("token");
+      
       }, [navigate]);
 
     
@@ -25,7 +22,7 @@ function Home() {
     <div> 
       <header>
         <h1 className="title">Welcome to Forex E-Learning Hub</h1>
-        <h3 className="title">Your financial freedom starts here!</h3>
+        <h3 className="title2">Your financial freedom starts here!</h3>
       </header>
 
       <p style={{ textAlign: "center", margin: "20px 0", color: "#333" }}>
